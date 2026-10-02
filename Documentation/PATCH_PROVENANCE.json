@@ -1,0 +1,161 @@
+[
+  {
+    "file": "Patches/dolphin-arm.patch",
+    "sha256": "12990c534605e67e20ee644c4f7ab486140651b1f7f83ed7ca80059fbf207b63",
+    "upstreamProject": "Dolphin",
+    "repository": "https://github.com/dolphin-emu/dolphin",
+    "exactBaseRevision": null,
+    "candidateLockRevision": "a2efdf1197be8132674b90fe9cf4761df39752ed",
+    "upstreamLicenseFromLocalInventory": "GPL-2.0-or-later",
+    "copyrightNoticesInPatch": [],
+    "containsUpstreamSource": true,
+    "modifiedUpstreamFiles": [
+      "Source/Core/Common/FileUtil.cpp",
+      "Source/Core/DolphinNoGUI/MainNoGUI.cpp",
+      "Source/Core/DolphinNoGUI/PlatformMacos.mm",
+      "Source/Core/InputCommon/ControllerInterface/Quartz/QuartzKeyboardAndMouse.mm"
+    ],
+    "addedLines": 108,
+    "removedLines": 3,
+    "requiredNotices": "Preserve applicable upstream copyright/license notices and identify Akito modifications; exact per-file notices need recovery",
+    "sourceAvailability": "NEEDS REVIEW: determine corresponding-source/build-material obligations for this patch and host/core boundary",
+    "redistributionObligations": "NEEDS REVIEW: license texts alone do not discharge all duties",
+    "status": "NEEDS REVIEW"
+  },
+  {
+    "file": "Patches/ppsspp-arm.patch",
+    "sha256": "f7ed807ab325c4ef9d426eafbb554e0b25244e47d277a7ce2e9f14bc9772de90",
+    "upstreamProject": "PPSSPP",
+    "repository": "https://github.com/hrydgard/ppsspp",
+    "exactBaseRevision": null,
+    "candidateLockRevision": "25812b70fb6afec5a7b7ca7a36d3a2a8705f18ab",
+    "upstreamLicenseFromLocalInventory": "GPL-2.0-or-later",
+    "copyrightNoticesInPatch": [],
+    "containsUpstreamSource": true,
+    "modifiedUpstreamFiles": [
+      "libretro/CMakeLists.txt"
+    ],
+    "addedLines": 2,
+    "removedLines": 1,
+    "requiredNotices": "Preserve applicable upstream copyright/license notices and identify Akito modifications; exact per-file notices need recovery",
+    "sourceAvailability": "NEEDS REVIEW: determine corresponding-source/build-material obligations for this patch and host/core boundary",
+    "redistributionObligations": "NEEDS REVIEW: license texts alone do not discharge all duties",
+    "status": "NEEDS REVIEW"
+  },
+  {
+    "file": "Patches/parallel_n64-arm.patch",
+    "sha256": "37bef93064aa06bb82d08f876ca5ee95384cae93360ceeef1dd99ce1a11df4e5",
+    "upstreamProject": "ParaLLEl N64",
+    "repository": "https://github.com/libretro/parallel-n64",
+    "exactBaseRevision": null,
+    "candidateLockRevision": "2f3bf60dcd969ae13e60731eab681504256272db",
+    "upstreamLicenseFromLocalInventory": "GPL-2.0-or-later",
+    "copyrightNoticesInPatch": [],
+    "containsUpstreamSource": true,
+    "modifiedUpstreamFiles": [
+      "libretro/libretro.c"
+    ],
+    "addedLines": 3,
+    "removedLines": 0,
+    "requiredNotices": "Preserve applicable upstream copyright/license notices and identify Akito modifications; exact per-file notices need recovery",
+    "sourceAvailability": "NEEDS REVIEW: determine corresponding-source/build-material obligations for this patch and host/core boundary",
+    "redistributionObligations": "NEEDS REVIEW: license texts alone do not discharge all duties",
+    "status": "NEEDS REVIEW"
+  },
+  {
+    "file": "Patches/mednafen_pce_fast-arm.patch",
+    "sha256": "b6e54328409a8014444037e747ad8c973d6f6fc3590a586dc4f9dfe08d53fd98",
+    "upstreamProject": "Beetle PCE Fast",
+    "repository": "https://github.com/libretro/beetle-pce-fast-libretro",
+    "exactBaseRevision": null,
+    "candidateLockRevision": "95fbd9c51bf0e35aa376a7774e9c02ff927cd991",
+    "upstreamLicenseFromLocalInventory": "GPL-2.0-or-later",
+    "copyrightNoticesInPatch": [],
+    "containsUpstreamSource": true,
+    "modifiedUpstreamFiles": [
+      "deps/zlib-1.2.11/zutil.h"
+    ],
+    "addedLines": 1,
+    "removedLines": 1,
+    "requiredNotices": "Preserve applicable upstream copyright/license notices and identify Akito modifications; exact per-file notices need recovery",
+    "sourceAvailability": "NEEDS REVIEW: determine corresponding-source/build-material obligations for this patch and host/core boundary",
+    "redistributionObligations": "NEEDS REVIEW: license texts alone do not discharge all duties",
+    "status": "NEEDS REVIEW"
+  },
+  {
+    "file": "Patches/rpcs3-embedded-core.patch",
+    "sha256": "42d77e6b5fac360b92e1a4746f62f767b4037c3ba34d39f5b3008c77e38e1834",
+    "upstreamProject": "RPCS3",
+    "repository": "https://github.com/RPCS3/rpcs3",
+    "exactBaseRevision": null,
+    "candidateLockRevision": null,
+    "upstreamLicenseFromLocalInventory": "GPL-2.0 (version needs per-file confirmation)",
+    "copyrightNoticesInPatch": [],
+    "containsUpstreamSource": true,
+    "modifiedUpstreamFiles": [
+      "CMakeLists.txt",
+      "rpcs3/CMakeLists.txt"
+    ],
+    "addedLines": 7,
+    "removedLines": 1,
+    "requiredNotices": "Preserve applicable upstream copyright/license notices and identify Akito modifications; exact per-file notices need recovery",
+    "sourceAvailability": "NEEDS REVIEW: determine corresponding-source/build-material obligations for this patch and host/core boundary",
+    "redistributionObligations": "NEEDS REVIEW: license texts alone do not discharge all duties",
+    "status": "NEEDS REVIEW"
+  },
+  {
+    "file": "Patches/vita3k-embedded-core.patch",
+    "sha256": "c216c720813dbd6395e1812942de1ece90ef0aaa37bdce26355a38e5bc41e13f",
+    "upstreamProject": "Vita3K",
+    "repository": "https://github.com/Vita3K/Vita3K",
+    "exactBaseRevision": null,
+    "candidateLockRevision": null,
+    "upstreamLicenseFromLocalInventory": "GPL-2.0 (version needs per-file confirmation)",
+    "copyrightNoticesInPatch": [],
+    "containsUpstreamSource": true,
+    "modifiedUpstreamFiles": [
+      "external/CMakeLists.txt",
+      "vita3k/CMakeLists.txt"
+    ],
+    "addedLines": 16,
+    "removedLines": 2,
+    "requiredNotices": "Preserve applicable upstream copyright/license notices and identify Akito modifications; exact per-file notices need recovery",
+    "sourceAvailability": "NEEDS REVIEW: determine corresponding-source/build-material obligations for this patch and host/core boundary",
+    "redistributionObligations": "NEEDS REVIEW: license texts alone do not discharge all duties",
+    "status": "NEEDS REVIEW"
+  },
+  {
+    "file": "Resources/CoreOptions/melondsds-19712b66d8d4f95278a5128ddf05cbd80adb2f55f4b5e6a0919874f29581eb75.json",
+    "sha256": "6da389ae8917197cc0028ecddba69e53d18cd141cf8e377769fcde5702dfc41b",
+    "upstreamProject": "melonDS DS",
+    "repository": "https://github.com/JesseTG/melonds-ds",
+    "recordedRevision": "bc4e4b67d2d470d7c682810a1e892cafd6f9082b",
+    "verifiedBaseRevision": null,
+    "upstreamLicense": "GPL-3.0-or-later per local lock",
+    "originalCopyrightNotices": "Not documented in metadata; recover from src/libretro/config/definitions.hpp at recorded revision",
+    "containsUpstreamSource": "Derived option descriptions and values; provenance sidecar records extraction source",
+    "modifications": "Exported into JSON for settings UI; see Scripts/ExportMelonDSOptions.cpp",
+    "requiredNotices": "Per-file copyright and license determination required",
+    "sourceAvailability": "NEEDS REVIEW: derived metadata and extractor corresponding source",
+    "redistributionObligations": "NEEDS REVIEW",
+    "uncertainty": "Extraction provenance is recorded, authorship/legal obligations not cleared",
+    "status": "NEEDS REVIEW"
+  },
+  {
+    "file": "Resources/CoreOptions/melondsds-provenance.json",
+    "sha256": "0d80558f8aaaf681a598fd01abf7ccb309e3c3dd6d1c987b99570550ea675b21",
+    "upstreamProject": "melonDS DS",
+    "repository": "https://github.com/JesseTG/melonds-ds",
+    "recordedRevision": "bc4e4b67d2d470d7c682810a1e892cafd6f9082b",
+    "verifiedBaseRevision": null,
+    "upstreamLicense": "GPL-3.0-or-later per local lock",
+    "originalCopyrightNotices": "Not documented in metadata; recover from src/libretro/config/definitions.hpp at recorded revision",
+    "containsUpstreamSource": "Derived option descriptions and values; provenance sidecar records extraction source",
+    "modifications": "Exported into JSON for settings UI; see Scripts/ExportMelonDSOptions.cpp",
+    "requiredNotices": "Per-file copyright and license determination required",
+    "sourceAvailability": "NEEDS REVIEW: derived metadata and extractor corresponding source",
+    "redistributionObligations": "NEEDS REVIEW",
+    "uncertainty": "Extraction provenance is recorded, authorship/legal obligations not cleared",
+    "status": "NEEDS REVIEW"
+  }
+]

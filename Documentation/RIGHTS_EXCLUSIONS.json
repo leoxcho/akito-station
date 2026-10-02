@@ -1,0 +1,154 @@
+[
+  {
+    "path": "Patches/dolphin-arm.patch",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Patches/mednafen_pce_fast-arm.patch",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Patches/parallel_n64-arm.patch",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Patches/ppsspp-arm.patch",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Patches/rpcs3-embedded-core.patch",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Patches/vita3k-embedded-core.patch",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/AppIcon.icns",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_16x16.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_16x16@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_256x256.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_256x256@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_32x32.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_32x32@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_512x512.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/AppIcon.appiconset/icon_512x512@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/Assets.xcassets/Contents.json",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/CoreOptions/melondsds-19712b66d8d4f95278a5128ddf05cbd80adb2f55f4b5e6a0919874f29581eb75.json",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/CoreOptions/melondsds-provenance.json",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_128x128.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_128x128@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_16x16.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_16x16@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_256x256.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_256x256@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_32x32.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_32x32@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_512x512.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/IconSources/AppIcon.iconset/icon_512x512@2x.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Resources/StationLogo.png",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Scripts/ExportMelonDSOptions.cpp",
+    "reason": "Existing provenance does not establish complete publication rights/notices."
+  },
+  {
+    "path": "Sources/AkitoStation/IceTheme.swift",
+    "reason": "Undocumented visual theme and logo implementation; replaced by newly written plain system-style views."
+  },
+  {
+    "path": "Sources/AkitoStation/CollectionSections.swift: ConsoleDrawing and MemoryCardArtwork",
+    "reason": "Console/device and memory-card illustrations excluded; plain text implementations substituted."
+  },
+  {
+    "path": "Sources/AkitoStation/LibraryView.swift: GameCard",
+    "reason": "Placeholder cover artwork excluded; plain text and user-supplied image display substituted."
+  },
+  {
+    "path": "Scripts/make-icon.swift",
+    "reason": "Not useful in initial export without excluded logo/patch inputs."
+  },
+  {
+    "path": "Scripts/manage-dolphin.py",
+    "reason": "Not useful in initial export without excluded logo/patch inputs."
+  }
+]

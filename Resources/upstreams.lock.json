@@ -1,0 +1,57 @@
+{
+  "nestopia": {
+    "upstream": "https://github.com/libretro/nestopia",
+    "revision": "0a46d231849ecfa3d777b6bf9107d57ce82452cb",
+    "license": "GPL-2.0"
+  },
+  "gambatte": {
+    "upstream": "https://github.com/libretro/gambatte-libretro",
+    "revision": "d9d6cd06382d1ced30de34d56d3609452323dab1",
+    "license": "GPL-2.0"
+  },
+  "snes9x": {
+    "upstream": "https://github.com/snes9xgit/snes9x",
+    "revision": "7a8878f1306f65594c30b7d86dee41d972c2e495",
+    "license": "Snes9x non-commercial"
+  },
+  "mgba": {
+    "upstream": "https://github.com/mgba-emu/mgba",
+    "revision": "aa6394c93ca24b0ff40dc9231bdb0533f415e0be",
+    "license": "MPL-2.0"
+  },
+  "pcsx_rearmed": {
+    "upstream": "https://github.com/libretro/pcsx_rearmed",
+    "revision": "8625c395a24411f8c77e69802b516df9c613a712",
+    "license": "GPL-2.0"
+  },
+  "melondsds": {
+    "upstream": "https://github.com/JesseTG/melonds-ds",
+    "revision": "bc4e4b67d2d470d7c682810a1e892cafd6f9082b",
+    "license": "GPL-3.0-or-later"
+  },
+  "dolphin": {
+    "upstream": "https://github.com/dolphin-emu/dolphin",
+    "revision": "a2efdf1197be8132674b90fe9cf4761df39752ed",
+    "license": "GPL-2.0-or-later"
+  },
+  "parallel_n64": {
+    "upstream": "https://github.com/libretro/parallel-n64",
+    "revision": "2f3bf60dcd969ae13e60731eab681504256272db",
+    "license": "GPL-2.0-or-later"
+  },
+  "genesis_plus_gx": {
+    "upstream": "https://github.com/libretro/Genesis-Plus-GX",
+    "revision": "a7985a9c4278ac352f8ca7bb4d3cc6b36e9e3e7d",
+    "license": "Non-commercial (see LICENSE)"
+  },
+  "mednafen_pce_fast": {
+    "upstream": "https://github.com/libretro/beetle-pce-fast-libretro",
+    "revision": "95fbd9c51bf0e35aa376a7774e9c02ff927cd991",
+    "license": "GPL-2.0-or-later"
+  },
+  "ppsspp": {
+    "upstream": "https://github.com/hrydgard/ppsspp",
+    "revision": "25812b70fb6afec5a7b7ca7a36d3a2a8705f18ab",
+    "license": "GPL-2.0-or-later"
+  }
+}

@@ -1,0 +1,767 @@
+{
+  "schema": 1,
+  "status": "Apache-2.0 original code only; unverified rights material excluded; validation required",
+  "backend": "embedded source without Git metadata",
+  "sourceFiles": [
+    {
+      "path": ".gitignore",
+      "sha256": "10d349baf05fe1feabd1a6deca23a7f7fbd20538020862b096b0841f90df517b",
+      "bytes": 895
+    },
+    {
+      "path": "Backend/.env.example",
+      "sha256": "439edf7973df08a0898b1b161f080cb1894f2b158c9a552e67c80bd2aaea9b1b",
+      "bytes": 519
+    },
+    {
+      "path": "Backend/dependency-inventory.json",
+      "sha256": "76c48a9fadd838c07ac78eb6a74ad05d7b4981898c3714cc7080192faf312424",
+      "bytes": 1903
+    },
+    {
+      "path": "Backend/entitlements.py",
+      "sha256": "3a4a4356fba4d7ee161e06b09361b003e9b39dabc2e154f1f03685bd3fa4278b",
+      "bytes": 866
+    },
+    {
+      "path": "Backend/operations.py",
+      "sha256": "c09168e1494993c9075e020952efb5f0f425918d62a433161e34c8d8c928e1ff",
+      "bytes": 1730
+    },
+    {
+      "path": "Backend/protections.py",
+      "sha256": "82044ebb7da34baac09721485e646c4d41df035ac3e341f84ebd793bd3be4f88",
+      "bytes": 2529
+    },
+    {
+      "path": "Backend/providers.py",
+      "sha256": "dfc5fefa0202a0700eb56ddb781f9ebf82b7654e7809fd2ccba5babdbb7f6863",
+      "bytes": 3879
+    },
+    {
+      "path": "Backend/requirements.lock",
+      "sha256": "b7884abaf326fc00d06a7dc532e91e584c4fe12db6af5fe6e23ee31a6ccaaad0",
+      "bytes": 418
+    },
+    {
+      "path": "Backend/requirements.txt",
+      "sha256": "a8c22e427416ecbe6ed3d6518a471d8b38baadd731be2041cbe37197d7fc0899",
+      "bytes": 81
+    },
+    {
+      "path": "Backend/server.py",
+      "sha256": "3c4138b8a2196fd17be422957e8fae462483abb576ea5b440fddcfdc24f5a0ce",
+      "bytes": 30136
+    },
+    {
+      "path": "Backend/test_concurrency.py",
+      "sha256": "bd9c2560a7aa8488450f52438b5dddf75e2ffc3e1d968dc67b15414728140c10",
+      "bytes": 7818
+    },
+    {
+      "path": "Backend/test_entitlements.py",
+      "sha256": "e1cb1da6c5b2e05bb39b8e36be69e9aae203d0bfb0d84b5d241232286d766f41",
+      "bytes": 1336
+    },
+    {
+      "path": "Backend/test_hardening.py",
+      "sha256": "b5af488fa604f9d6f672ee1dbfe2c53e3eb10e3dd4f32e7ad89e30243fb21a36",
+      "bytes": 2463
+    },
+    {
+      "path": "Backend/test_login.py",
+      "sha256": "ce1fa0a13390b84c0c2a03f241ce4ab4b4567e281e94b07cc3863b25144afbd3",
+      "bytes": 3234
+    },
+    {
+      "path": "Backend/test_providers.py",
+      "sha256": "c7394c686db1d484c252073b154a49f663c3971dec47f1f099fd8bea5acf3765",
+      "bytes": 3691
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "d4bd1789cf8f8b67bf7b81ffea52e99cfed560d5214fd7c53306c46645b169eb",
+      "bytes": 104
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "21fc8d509f9b8a3ae2398c5a705b69ed898d371aecac359dbaf031282ca857e7",
+      "bytes": 123
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "4fd47c8e953e5af3d1d55b0c8c3c68b977a98666ed717b38f971f80828e0d4d3",
+      "bytes": 242
+    },
+    {
+      "path": "Documentation/APPLICATION_LICENSE_OPTIONS.md",
+      "sha256": "40ec15751b967a62198cb4dbb90d10df15ba11fc498781bc06c516f357936713",
+      "bytes": 345
+    },
+    {
+      "path": "Documentation/ASSET_PROVENANCE.md",
+      "sha256": "40ec15751b967a62198cb4dbb90d10df15ba11fc498781bc06c516f357936713",
+      "bytes": 345
+    },
+    {
+      "path": "Documentation/BACKEND_DEPLOYMENT.md",
+      "sha256": "e1f761c6ef7dc87daa666a9526e61edd5848b6d9c67280edf5cb9ef4d90ccc07",
+      "bytes": 7695
+    },
+    {
+      "path": "Documentation/EMULATOR_ENGINES.md",
+      "sha256": "e5d7995cb7ae107836e0b2719a57e0003afd2e21633c0fa0c4f44e8938875bd6",
+      "bytes": 1265
+    },
+    {
+      "path": "Documentation/LICENSE_REPORT.md",
+      "sha256": "40ec15751b967a62198cb4dbb90d10df15ba11fc498781bc06c516f357936713",
+      "bytes": 345
+    },
+    {
+      "path": "Documentation/LICENSING_INVENTORY.json",
+      "sha256": "d1dce821e859b31d412018e0a14b559bd60023299e29b07ab64ad2dfae6666de",
+      "bytes": 23338
+    },
+    {
+      "path": "Documentation/Licenses/Beetle-PCE-Fast-GPL.txt",
+      "sha256": "a6996dcf0c334281f734560926e079b2dbbd5b78e81c0ca00a413ec01e1cd2fb",
+      "bytes": 18010
+    },
+    {
+      "path": "Documentation/Licenses/Dolphin-GPL.txt",
+      "sha256": "695114256e306a5e1ca407bc6e2a11877b112328dbe990253b52f59726e01b4b",
+      "bytes": 494
+    },
+    {
+      "path": "Documentation/Licenses/PPSSPP-license.txt",
+      "sha256": "ff265754cbb2e0d3b674f90a79ef5bbaa1f7f1075aec9f5e241524520e5049fa",
+      "bytes": 19740
+    },
+    {
+      "path": "Documentation/Licenses/ParaLLEl-N64-GPL.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048
+    },
+    {
+      "path": "Documentation/Licenses/RPCS3-license.txt",
+      "sha256": "39db8f9acf036595a2566ea3fe560bc7bd65d8749f088e0f4a4ef2f8a6cb4b34",
+      "bytes": 18026
+    },
+    {
+      "path": "Documentation/Licenses/Vita3K-license.txt",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "bytes": 18092
+    },
+    {
+      "path": "Documentation/OPTIONAL_EMULATORS.md",
+      "sha256": "30fcb2c50150e6eb60a7f860d06e2b430a9a016c8da8420ae2db3a81fbd7fdd2",
+      "bytes": 7080
+    },
+    {
+      "path": "Documentation/PATCH_PROVENANCE.json",
+      "sha256": "61207427fd01fbc2a43f853d5c2865cadee20a2a413f0d47878294f450b3d5a4",
+      "bytes": 8504
+    },
+    {
+      "path": "Documentation/PATCH_PROVENANCE.md",
+      "sha256": "40ec15751b967a62198cb4dbb90d10df15ba11fc498781bc06c516f357936713",
+      "bytes": 345
+    },
+    {
+      "path": "Documentation/PAYMENTS.md",
+      "sha256": "93d7acd1777c5d6c1a0c548bab3f3682c7c2af16d724fe4d2da75d168bc955a9",
+      "bytes": 15585
+    },
+    {
+      "path": "Documentation/RIGHTS_EXCLUSIONS.json",
+      "sha256": "cd826913115ff893ef390a9a5b215563f6d816f66816ff2670e99f6124fdad9c",
+      "bytes": 6372
+    },
+    {
+      "path": "Documentation/RUNTIME_SECURITY.md",
+      "sha256": "d7c5f982d4966a1d4b6408d0dd25d12b1c7da79bf343f6c428a307ca567ce1a2",
+      "bytes": 4299
+    },
+    {
+      "path": "Documentation/RUNTIME_TRUST_POLICY.md",
+      "sha256": "001d06f27b73c83189edb28091f22767009633d27152682dde5a7f0caeeaa98a",
+      "bytes": 3227
+    },
+    {
+      "path": "Documentation/SOURCE_PUBLICATION.md",
+      "sha256": "40ec15751b967a62198cb4dbb90d10df15ba11fc498781bc06c516f357936713",
+      "bytes": 345
+    },
+    {
+      "path": "Documentation/SUPPORT_MATRIX.md",
+      "sha256": "df4e926b1060fe770dbb1a030324357f23c5ca5e5acce8ca5fae5608c5880c8f",
+      "bytes": 6827
+    },
+    {
+      "path": "Documentation/THIRD_PARTY_NOTICES.md",
+      "sha256": "403d8f2388b1516bc30c3e669cf44100cc3f5281d243c5dc1ca63c9274fa590a",
+      "bytes": 1856
+    },
+    {
+      "path": "INSTALLATION.md",
+      "sha256": "3d19db258e3433f7a62f456ecf92d6d985bf6e359a2fd5d1d0a29c0535c18627",
+      "bytes": 175
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "LICENSE_SCOPE.json",
+      "sha256": "01d3d043e737c1c33e00550a509c33d574f1354ade52040c7b65e0f6ad9f7397",
+      "bytes": 7926
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "10fb4380ffdfee05ef956ccb2277c64d3481383c9e497761bc64adf91236e1c3",
+      "bytes": 325
+    },
+    {
+      "path": "PRIVACY.md",
+      "sha256": "bf6bad71ad8d0a068fe5e615251f9a99785045e77571530a0d7b125401a7ef56",
+      "bytes": 287
+    },
+    {
+      "path": "Package.swift",
+      "sha256": "fdeab9875c778c6e9525c38fc661bda359e5996fb50dc20f6df8e6b2f94f4ec2",
+      "bytes": 1154
+    },
+    {
+      "path": "README.md",
+      "sha256": "82641dd3536559c99a3659fe3cd2e8061063d740be13a1cf2d99cc7634eb5bf9",
+      "bytes": 3065
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "sha256": "693fdcc36065e028200ac1e910ffcbfbc76b2181d14a19d40ce24a697b4f055d",
+      "bytes": 123
+    },
+    {
+      "path": "Resources/Public-Info.plist",
+      "sha256": "cc5475146dde0e67843bd0edf9730339bb9dcd16f6b4d26de93c86811149221a",
+      "bytes": 1153
+    },
+    {
+      "path": "Resources/Public.entitlements",
+      "sha256": "de994ee4d59817486f3fa3b57cb32d5ebb96f683531a959bd28d3da8ebccf259",
+      "bytes": 387
+    },
+    {
+      "path": "Resources/upstreams.lock.json",
+      "sha256": "1ddb6b91cb019b0d304d374858640d6864f60fbc8ac08bca40cd3184226284a3",
+      "bytes": 1917
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "6865c0744424799de3dc8bc7016a2862035b01cbfddf1b836aed644abc1a52a3",
+      "bytes": 199
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "6ae9562efc1671651b1106e9d486565fb8bdc3bb21f084adf1bdf8a85e9fea22",
+      "bytes": 245
+    },
+    {
+      "path": "Scripts/build.sh",
+      "sha256": "33cf34d082eb848af9e7b6d53475ac866273bb4689f081fd9f696960889dc51a",
+      "bytes": 2593
+    },
+    {
+      "path": "Scripts/embed-player.sh",
+      "sha256": "07f57dd1262bbad867865efb21a13e5e151682e684e69e512b9df07a998c7652",
+      "bytes": 1345
+    },
+    {
+      "path": "Scripts/import-core.py",
+      "sha256": "a865652191adba1e65dcda697edf1479ee303374f7c03d6545c047667361a1b6",
+      "bytes": 3010
+    },
+    {
+      "path": "Scripts/import-emulator-settings.py",
+      "sha256": "aa9160d42385565fa29270765dfd2131bd62037f1b47d674dab696fc81738de6",
+      "bytes": 9971
+    },
+    {
+      "path": "Scripts/import-managed.py",
+      "sha256": "75d8a472d8c242de0830563b61505baf935dfa26b1ef5eace02514df61df4fbd",
+      "bytes": 7129
+    },
+    {
+      "path": "Scripts/install-console-package.py",
+      "sha256": "e396285be49aaefd9b3e58aca7fb67a879050f53ae7e0e1c6a7cd64ee76bc8ba",
+      "bytes": 13867
+    },
+    {
+      "path": "Scripts/install-release.py",
+      "sha256": "61ab79cc4cc500b4006a6a68ba96837cae4a6fc0e96c7efd6f3ec10ac061006f",
+      "bytes": 2840
+    },
+    {
+      "path": "Scripts/manage-runtime.py",
+      "sha256": "a92fd95d97fdc8fbfe6be348bc2f710fe4cf079cbd9b8cb7f91e544807337fdd",
+      "bytes": 12202
+    },
+    {
+      "path": "Scripts/package-release-candidate.sh",
+      "sha256": "90f9f7297e72b51de4e45faa8160a086caafc43c35dce05219977ee96a7d0e11",
+      "bytes": 421
+    },
+    {
+      "path": "Scripts/test-optional-runtimes.py",
+      "sha256": "2de9a9fc77353b353c0abf8403d641e92644d49cb516d89d8cac84c7637f797d",
+      "bytes": 4353
+    },
+    {
+      "path": "Scripts/test-release-installer.py",
+      "sha256": "7b9c6003095c62d10a80d64875f8614ad73d27eb78371bdd3651b2c62ec60ee8",
+      "bytes": 2748
+    },
+    {
+      "path": "Scripts/test-settings-import.py",
+      "sha256": "732407b04ff734be2f6dba4a333b986ab02bc51785c1e109bbd8377aafdcb6ed",
+      "bytes": 1734
+    },
+    {
+      "path": "Scripts/test.sh",
+      "sha256": "fd39366d0e65310ebecffebb66a63edfece8098c5818e4a743ef8c13e1d07863",
+      "bytes": 478
+    },
+    {
+      "path": "Scripts/verify-public-release.py",
+      "sha256": "de246dbf201216bbda173f522dbe4f7c31144d04595f43970b424815b894ae9d",
+      "bytes": 2601
+    },
+    {
+      "path": "Sources/AkitoStation/AddEmulatorView.swift",
+      "sha256": "a78c2a7e6fcc075a49cc5f91c667dcdca118050d5d0ac38ccb7b816da8cc167a",
+      "bytes": 10332
+    },
+    {
+      "path": "Sources/AkitoStation/ArtworkEditor.swift",
+      "sha256": "16cc1f66ada4a6a1192a01a92f37ce5903a62c0f1de3a70990bef865f632c016",
+      "bytes": 3093
+    },
+    {
+      "path": "Sources/AkitoStation/BuildEdition.swift",
+      "sha256": "ac627444e417c9818aacda6d32bba8330eb8f7e3b2e96cd54c2a070d2d753c5b",
+      "bytes": 875
+    },
+    {
+      "path": "Sources/AkitoStation/CemuGraphicsPacksView.swift",
+      "sha256": "febe580755282b4dc6c11e27d5b72825f9d6107df32f63e666d7bc35d17584ec",
+      "bytes": 2440
+    },
+    {
+      "path": "Sources/AkitoStation/CollectionSections.swift",
+      "sha256": "5ba6abd3656e37e29d809f95603319a0dc6af3e394d32985812a6cde7d9c6f65",
+      "bytes": 9569
+    },
+    {
+      "path": "Sources/AkitoStation/ContentInstallStore.swift",
+      "sha256": "f72ae8e500425427bcc0e87d479da88d52e0b48a6dd1ff382cd1230a4bc7b756",
+      "bytes": 2613
+    },
+    {
+      "path": "Sources/AkitoStation/ContentInstallView.swift",
+      "sha256": "ab1251caf63671aedf72b4bb9da8c1e654b3ebd4ec62ff3abcf8316e35f07d38",
+      "bytes": 5667
+    },
+    {
+      "path": "Sources/AkitoStation/ControllerSettings.swift",
+      "sha256": "2e7575d19857a02899ce0d161b9144f7a69a8f9ba0e2648ad394149ae432976e",
+      "bytes": 4262
+    },
+    {
+      "path": "Sources/AkitoStation/CustomEmulatorStore.swift",
+      "sha256": "76d11c7ab84af9699108848753571b9a0e05a8404a34fa633a135cc11ff9922f",
+      "bytes": 4156
+    },
+    {
+      "path": "Sources/AkitoStation/EmulatorSettingsView.swift",
+      "sha256": "90820aab78613f10e5418f16ccc6fa00ce3529c634059f60190c9824c2d0a184",
+      "bytes": 12652
+    },
+    {
+      "path": "Sources/AkitoStation/FirmwareSettings.swift",
+      "sha256": "0a9aabf1223c5423d504eb45eae3642f66a79f3c6e2d896acacb2d878dcd9a2c",
+      "bytes": 2290
+    },
+    {
+      "path": "Sources/AkitoStation/LibraryView.swift",
+      "sha256": "3dc09bb9932e2600e13ca66618d4ba91bebca977a658575b127188a81ee18414",
+      "bytes": 10802
+    },
+    {
+      "path": "Sources/AkitoStation/OptionalRuntimeStore.swift",
+      "sha256": "77b7040b5c2473fb1eceb7b7e246004b3c833c3991bcbb686c2da488cca38fca",
+      "bytes": 12087
+    },
+    {
+      "path": "Sources/AkitoStation/OptionalRuntimeView.swift",
+      "sha256": "dc383c35472019871fa9d50993259443ca9318c80085004d7ed27ab84b73fc46",
+      "bytes": 9790
+    },
+    {
+      "path": "Sources/AkitoStation/Player.swift",
+      "sha256": "8982a6540b212272540d5fe92ffd0319f1d5651980d2a639e6ca3da0c02f1c19",
+      "bytes": 12986
+    },
+    {
+      "path": "Sources/AkitoStation/PremiumStore.swift",
+      "sha256": "4b127ab0bd317af6ea95b52ab054caf74c1c28fbb53ba3675a0d6c74ac981a79",
+      "bytes": 2143
+    },
+    {
+      "path": "Sources/AkitoStation/PublicPayments.swift",
+      "sha256": "24edd156de967d54efad7ae15f00487187adba940b5a1e225accf8fa6d7192b4",
+      "bytes": 12168
+    },
+    {
+      "path": "Sources/AkitoStation/PublicationTheme.swift",
+      "sha256": "58512efb87ae14a6dfe5b5688420a8914b7af703087020862cad9209963d3941",
+      "bytes": 851
+    },
+    {
+      "path": "Sources/AkitoStation/RuntimeUpdateStore.swift",
+      "sha256": "fc557bc0990eabc7f8ece723a7ddc495cd718b93f800c8de92ed8ce73cdd8d24",
+      "bytes": 9436
+    },
+    {
+      "path": "Sources/AkitoStation/RuntimeUpdatesView.swift",
+      "sha256": "7fa7f457699afef53f44b19aea020f8f29766c77cbe2f3067da55d29da9a2c05",
+      "bytes": 6736
+    },
+    {
+      "path": "Sources/AkitoStation/SettingsView.swift",
+      "sha256": "df52fa313b0b89b7d93ba205ebd692e4c1f631bfd4d069b9b05a559e96c0db15",
+      "bytes": 11921
+    },
+    {
+      "path": "Sources/AkitoStation/Store.swift",
+      "sha256": "30792a8e6fd9d5e8e6ae85688da9fcdf6895740dd7b481ca9215c2ec87566efe",
+      "bytes": 29823
+    },
+    {
+      "path": "Sources/AkitoStation/SystemAdapter.swift",
+      "sha256": "1d85f7c4f639a4d5999f6eb5a27dd17015e497a5fb7f59fb1f951fe50f0e99d4",
+      "bytes": 3046
+    },
+    {
+      "path": "Sources/AkitoStation/main.swift",
+      "sha256": "b231a59c95e1eb4523b55625834e81e87879afab9bae04a33994cd5343452c21",
+      "bytes": 2632
+    },
+    {
+      "path": "Sources/AkitoStationCore/Artwork.swift",
+      "sha256": "3d00471e68dd604679f2fb4ebfafc119a609491543b1602abf2359f92fed378b",
+      "bytes": 15323
+    },
+    {
+      "path": "Sources/AkitoStationCore/CemuAudioConfiguration.swift",
+      "sha256": "847a8801e73e4f309d8f26b04dbaa64f1e8ff70eae7c34f4f9cdf525270dfbe4",
+      "bytes": 1686
+    },
+    {
+      "path": "Sources/AkitoStationCore/CemuGraphicsPacks.swift",
+      "sha256": "1f0cf5b92032fb5c870fe1e3a9ffbd30cac50ac3a0657561fbdf8fa6f7fc1a58",
+      "bytes": 3797
+    },
+    {
+      "path": "Sources/AkitoStationCore/ConsoleContent.swift",
+      "sha256": "5a0542a508c0d952f73a606d061fd5b902835bfb68ca94118cad8f84fcdedb31",
+      "bytes": 10312
+    },
+    {
+      "path": "Sources/AkitoStationCore/ConsoleFolder.swift",
+      "sha256": "e592a48e6841439d19e5513a1e0361d325c65ef0716ceee7d0af492143a98921",
+      "bytes": 2753
+    },
+    {
+      "path": "Sources/AkitoStationCore/ConsoleResources.swift",
+      "sha256": "7bbcf6006ccb1be7d54bd7f303989133ab5d42cddb83a3fc412d8399824d4e3f",
+      "bytes": 5047
+    },
+    {
+      "path": "Sources/AkitoStationCore/ControllerBindings.swift",
+      "sha256": "0dbfd3bc4eff8ff68a92dc7d7b7bdb385081ac33588de1c330f04935c1268b07",
+      "bytes": 4918
+    },
+    {
+      "path": "Sources/AkitoStationCore/CoreOption.swift",
+      "sha256": "f292af54d06b5feb2181a32cfad07bdd443b43a0cabef291d400899cecfa1742",
+      "bytes": 489
+    },
+    {
+      "path": "Sources/AkitoStationCore/CustomEmulator.swift",
+      "sha256": "a45abe169e5a1411f065c2f54fbc87cfa01af775e2d38f096e21139200e00749",
+      "bytes": 15186
+    },
+    {
+      "path": "Sources/AkitoStationCore/DolphinLaunch.swift",
+      "sha256": "91adcc811e8c881cb3f4d386f0c4f61d49f4a9fe7728f6fe053b8626264de295",
+      "bytes": 3791
+    },
+    {
+      "path": "Sources/AkitoStationCore/EditionStorage.swift",
+      "sha256": "0c9b5369fb21645e18b2e5e3ba843b163d10dec3cf70d981589c0abaca4d944a",
+      "bytes": 470
+    },
+    {
+      "path": "Sources/AkitoStationCore/EmbeddedRuntime.swift",
+      "sha256": "cd6fb2f59b8eb34f342385fefc3f50dc3f8d237ad65bb58490a283b2df3c27ee",
+      "bytes": 967
+    },
+    {
+      "path": "Sources/AkitoStationCore/EmulatorSettings.swift",
+      "sha256": "94c4eb85edb7d0a689461d4d90f75c5f9133836567f1bec47884b2348d0ba663",
+      "bytes": 6165
+    },
+    {
+      "path": "Sources/AkitoStationCore/ExternalEmulator.swift",
+      "sha256": "b7f11dfb42ab5b7b91766db065dae405b1764f1c01681d719557beffba30a41f",
+      "bytes": 2873
+    },
+    {
+      "path": "Sources/AkitoStationCore/FeatureAccess.swift",
+      "sha256": "6450b18f3ced8020797deda106f97be3b654c01523fbbc8ca2a9ff9099b9314f",
+      "bytes": 982
+    },
+    {
+      "path": "Sources/AkitoStationCore/GraphicsConfiguration.swift",
+      "sha256": "105974b71dc5b4dd1e07b46d601012c86c493f0a45097c9e2ba721f32dbba1be",
+      "bytes": 5587
+    },
+    {
+      "path": "Sources/AkitoStationCore/KeyboardInput.swift",
+      "sha256": "c8450c0c474d6c19c28c87128adaa3f7ada4995986e8aa19c58154bcf795959f",
+      "bytes": 549
+    },
+    {
+      "path": "Sources/AkitoStationCore/LibraryPersistence.swift",
+      "sha256": "b7cb2f167945bc92bbf21f78145b697410acae97684657eb8709604f48d1b545",
+      "bytes": 816
+    },
+    {
+      "path": "Sources/AkitoStationCore/LibraryPresentation.swift",
+      "sha256": "bb3912d0020bb58fb4a530b686c94e75fb691b1a9a5780519f4069dc42b37c26",
+      "bytes": 1895
+    },
+    {
+      "path": "Sources/AkitoStationCore/LibrarySnapshotLoader.swift",
+      "sha256": "6b97dedb109519b6861a2825bb7bef5c5290f1db154c59c291c41eea085582c9",
+      "bytes": 2382
+    },
+    {
+      "path": "Sources/AkitoStationCore/ManagedLaunch.swift",
+      "sha256": "d339122ae9656799e605b3d1147b94f71220c670dbbe06af1b659a894aec5867",
+      "bytes": 6536
+    },
+    {
+      "path": "Sources/AkitoStationCore/Models.swift",
+      "sha256": "7a3086612bce7056853bc98081cdc7417e71d34542b88d6c982572f26ae8130a",
+      "bytes": 10602
+    },
+    {
+      "path": "Sources/AkitoStationCore/NativeConsoleInstaller.swift",
+      "sha256": "0d58224c0dbbe8fadf5ccbfaad98ab4810466f87d7fff31b0bd74f1f5c7b6b7e",
+      "bytes": 14019
+    },
+    {
+      "path": "Sources/AkitoStationCore/NativeRuntimeImport.swift",
+      "sha256": "284e18bd3ec600bafeda9da159933d4d4035f27ff35a398af0c4d8fbad76a249",
+      "bytes": 10237
+    },
+    {
+      "path": "Sources/AkitoStationCore/NativeSettingsDocument.swift",
+      "sha256": "6a2c2dd5142e11af01a116f1b97fb896a4e42a54f4d08959af8a062dced9e55d",
+      "bytes": 5039
+    },
+    {
+      "path": "Sources/AkitoStationCore/NativeSettingsImport.swift",
+      "sha256": "284f8be2c13e59c3f225d2efbf853c59d126798f3509cc1bcb89fc40dccb6ffe",
+      "bytes": 5816
+    },
+    {
+      "path": "Sources/AkitoStationCore/PS3DiscImport.swift",
+      "sha256": "669221c49d28ee58432a32bac86424ce334cfc92fb241412431a111184565f4a",
+      "bytes": 2199
+    },
+    {
+      "path": "Sources/AkitoStationCore/Payments.swift",
+      "sha256": "c2e421651b42bdd0c1a59b6e19a926eda73bdf0d48a1929ccbdde8349a7fb8af",
+      "bytes": 10389
+    },
+    {
+      "path": "Sources/AkitoStationCore/ProcessRunner.swift",
+      "sha256": "99fbcbb198402a28ee5cde3b7c89d8c7fc00f2dc8b66641866813326764edcec",
+      "bytes": 5326
+    },
+    {
+      "path": "Sources/AkitoStationCore/RPCS3Launch.swift",
+      "sha256": "7adb44c13af63c4984a3c1ce62a928202d8e5ed006ea19988e91d5ca9e19a105",
+      "bytes": 2757
+    },
+    {
+      "path": "Sources/AkitoStationCore/Runtime.swift",
+      "sha256": "9001d6297f18caaa76f4ce8c90e0ae95ce03ff873405093c2a49dfb07d80a8f7",
+      "bytes": 17430
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeArchive.swift",
+      "sha256": "3868a1a40c2c019c74b29e0d23ff314e8a4315e3e689047ff7e17d40d4caacd0",
+      "bytes": 8042
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeCatalog.swift",
+      "sha256": "392a76704b533cdd717dd423a913105ac3fb76c2159ac33befa98a4c9cbf4a4d",
+      "bytes": 6547
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeFileHashes.swift",
+      "sha256": "9301cbf1e8351688e242dc17ff7fe5ecb9574bf5b28184dc0e3e2b1d06423b05",
+      "bytes": 1530
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeTrust.swift",
+      "sha256": "60e739e7e3350c73f47ced583d3639b09ebf0a354d41a4cc319a3af5e3fb55bb",
+      "bytes": 4262
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeUpdates.swift",
+      "sha256": "046525b251f2bea01930110f22a6e64cdfb4ae0f559a4f055373a97e8cf5edb7",
+      "bytes": 10637
+    },
+    {
+      "path": "Sources/AkitoStationCore/SettingsReset.swift",
+      "sha256": "71ef5d21b95248a40a22d634157e14025d9b81fb75e0c22f648b0bf0cf369826",
+      "bytes": 1778
+    },
+    {
+      "path": "Sources/AkitoStationCore/SwitchLaunchRecord.swift",
+      "sha256": "5a97f268fd1ee49abfa49b7afaec1b49cea16e90d857340d9733a06cf2ea5840",
+      "bytes": 432
+    },
+    {
+      "path": "Sources/RetroHost/RetroHost.c",
+      "sha256": "0297e6fdcc844daa9edf7aeaeece03626f6e6e09011a7728d8127f35fbcf585c",
+      "bytes": 12131
+    },
+    {
+      "path": "Sources/RetroHost/include/RetroHost.h",
+      "sha256": "97f3913c4c417c6e005b384ca1deff0a82507186df6f65681bd3496b1e54c3fa",
+      "bytes": 1057
+    },
+    {
+      "path": "Sources/RetroHost/libretro.h",
+      "sha256": "5875414c47d8af4facf118c184b40b0e311285333a46bbfe8221a853efe5ba7a",
+      "bytes": 313828
+    },
+    {
+      "path": "Sources/RuntimeSupport/RuntimeSupport.c",
+      "sha256": "b51cef60dd754e416aa92a2398fd7c483793d074590a4270385fe6164cc74a33",
+      "bytes": 2204
+    },
+    {
+      "path": "Sources/RuntimeSupport/include/RuntimeSupport.h",
+      "sha256": "471c8af553248c7a2df8fdc3aa47b868946e59c4fc55170e5f26dafdd2211742",
+      "bytes": 375
+    },
+    {
+      "path": "TERMS.md",
+      "sha256": "08943bfe171a5e14e4fc9ee066654e1395b44dfdff35259635c77e4785af8f41",
+      "bytes": 200
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "403d8f2388b1516bc30c3e669cf44100cc3f5281d243c5dc1ca63c9274fa590a",
+      "bytes": 1856
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/AkitoStationCoreTests.swift",
+      "sha256": "9cd64b63f49395c43a0e43d510c66d88b95b08c6a41d5cc5d0619fd91ffc9f18",
+      "bytes": 20077
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/ArtworkTests.swift",
+      "sha256": "3639662ad2e5a33a2f51f364eb48c11fc54518f525e5f5af100f51910621ff3f",
+      "bytes": 8818
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/CemuAudioTests.swift",
+      "sha256": "ca3a7f305fe3f443eda2068b878f1a15fbddae3bd587e06add78197fded7eb0f",
+      "bytes": 1866
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/CustomEmulatorTests.swift",
+      "sha256": "27df68b16753df1c3838a3d2a3022fee0ae76e64264e2786e9d4819fcf7b9741",
+      "bytes": 12364
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/EmbeddedRuntimeTests.swift",
+      "sha256": "49d6bef195e0492f562fa978eb2065bd25f5b0d41840fcb6a45db9914ab1dfb8",
+      "bytes": 1078
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/EmulatorSettingsTests.swift",
+      "sha256": "1e069de2c27c60118b9f5ac86f3a4143302ba2c0051053c1f7b67d19401067b5",
+      "bytes": 8623
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/ExternalEmulatorTests.swift",
+      "sha256": "c106aaaae2ae12fa86f70d5e35e93d895aee178fb83c106cdb548011338a5222",
+      "bytes": 4502
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/FeatureAccessTests.swift",
+      "sha256": "10c7627559eded4cc946bd32570d06be7b730600014cb67f6335dd01fcc30295",
+      "bytes": 1661
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/NativeConsoleInstallerTests.swift",
+      "sha256": "83faad8808e9d2ea76bee2ba734d13630d65508dc26b4e6c07c469a018f0ff84",
+      "bytes": 6228
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/OptionalRuntimeTests.swift",
+      "sha256": "9f8adebad9b4b5e9579b0d564761d7a1505c4b74bd12f63f9f6e0be0929db383",
+      "bytes": 7620
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/PaymentTests.swift",
+      "sha256": "16bbb1afe4e5090cbe345319753e7c89ff2910c15c76c42e9836105b09f39b65",
+      "bytes": 8975
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/ReleaseEngineeringTests.swift",
+      "sha256": "221578122f59f8fc4e4aca37f075f40e591ef8829002669cc23c578eba8dc85a",
+      "bytes": 12652
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/ReleaseHardeningTests.swift",
+      "sha256": "a750b231c2e2e9c5969a27bfb51fa8bf7a9f57c6073f527eb745eb10f06dbb2f",
+      "bytes": 13864
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/RuntimeUpdateTests.swift",
+      "sha256": "af1d521fb0b36ef373961c6c19e4588d4b9259f96b419a83bf83ffe1e6d43453",
+      "bytes": 6399
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/SettingsResetTests.swift",
+      "sha256": "13fa531fd2da6f59b69972019e12f0225109c12a06fb4e518d20702d36f8f517",
+      "bytes": 1552
+    },
+    {
+      "path": "UNINSTALL.md",
+      "sha256": "2b894d9393cb7587dfb95043f9351bfffcb46afd8f38c1eaafb68e823a4c4465",
+      "bytes": 186
+    }
+  ]
+}

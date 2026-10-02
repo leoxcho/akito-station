@@ -1,0 +1,2 @@
+# Exact reviewed test inventory; deploy from the same lock.
+-r requirements.lock

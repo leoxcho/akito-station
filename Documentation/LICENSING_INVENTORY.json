@@ -1,0 +1,770 @@
+{
+  "status": "Reviewed publication scope: unverified material excluded",
+  "files": [
+    {
+      "path": ".gitignore",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/.env.example",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/dependency-inventory.json",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/entitlements.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/operations.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/protections.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/providers.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/requirements.lock",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/requirements.txt",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/server.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/test_concurrency.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/test_entitlements.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/test_hardening.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/test_login.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Backend/test_providers.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/APPLICATION_LICENSE_OPTIONS.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/ASSET_PROVENANCE.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/BACKEND_DEPLOYMENT.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/EMULATOR_ENGINES.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/LICENSE_REPORT.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/LICENSING_INVENTORY.json",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/Licenses/Beetle-PCE-Fast-GPL.txt",
+      "classification": "upstream license text",
+      "license": "License text retained verbatim; not relicensed"
+    },
+    {
+      "path": "Documentation/Licenses/Dolphin-GPL.txt",
+      "classification": "upstream license text",
+      "license": "License text retained verbatim; not relicensed"
+    },
+    {
+      "path": "Documentation/Licenses/PPSSPP-license.txt",
+      "classification": "upstream license text",
+      "license": "License text retained verbatim; not relicensed"
+    },
+    {
+      "path": "Documentation/Licenses/ParaLLEl-N64-GPL.txt",
+      "classification": "upstream license text",
+      "license": "License text retained verbatim; not relicensed"
+    },
+    {
+      "path": "Documentation/Licenses/RPCS3-license.txt",
+      "classification": "upstream license text",
+      "license": "License text retained verbatim; not relicensed"
+    },
+    {
+      "path": "Documentation/Licenses/Vita3K-license.txt",
+      "classification": "upstream license text",
+      "license": "License text retained verbatim; not relicensed"
+    },
+    {
+      "path": "Documentation/OPTIONAL_EMULATORS.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/PATCH_PROVENANCE.json",
+      "classification": "upstream notices/provenance metadata",
+      "license": "Retained original notices; not relicensed"
+    },
+    {
+      "path": "Documentation/PATCH_PROVENANCE.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/PAYMENTS.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/RIGHTS_EXCLUSIONS.json",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/RUNTIME_SECURITY.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/RUNTIME_TRUST_POLICY.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/SOURCE_PUBLICATION.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/SUPPORT_MATRIX.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Documentation/THIRD_PARTY_NOTICES.md",
+      "classification": "upstream notices/provenance metadata",
+      "license": "Retained original notices; not relicensed"
+    },
+    {
+      "path": "INSTALLATION.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "LICENSE",
+      "classification": "upstream license text",
+      "license": "License text retained verbatim; not relicensed"
+    },
+    {
+      "path": "LICENSE_SCOPE.json",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "NOTICE",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "PRIVACY.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Package.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "README.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Resources/Public-Info.plist",
+      "classification": "original project configuration",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Resources/Public.entitlements",
+      "classification": "original project configuration",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Resources/upstreams.lock.json",
+      "classification": "original project configuration",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "SECURITY.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "SUPPORT.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/build.sh",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/embed-player.sh",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/import-core.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/import-emulator-settings.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/import-managed.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/install-console-package.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/install-release.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/manage-runtime.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/package-release-candidate.sh",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/test-optional-runtimes.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/test-release-installer.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/test-settings-import.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/test.sh",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Scripts/verify-public-release.py",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/AddEmulatorView.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/ArtworkEditor.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/BuildEdition.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/CemuGraphicsPacksView.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/CollectionSections.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/ContentInstallStore.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/ContentInstallView.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/ControllerSettings.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/CustomEmulatorStore.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/EmulatorSettingsView.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/FirmwareSettings.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/LibraryView.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/OptionalRuntimeStore.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/OptionalRuntimeView.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/Player.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/PremiumStore.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/PublicPayments.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/PublicationTheme.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/RuntimeUpdateStore.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/RuntimeUpdatesView.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/SettingsView.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/Store.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/SystemAdapter.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStation/main.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/Artwork.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/CemuAudioConfiguration.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/CemuGraphicsPacks.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/ConsoleContent.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/ConsoleFolder.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/ConsoleResources.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/ControllerBindings.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/CoreOption.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/CustomEmulator.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/DolphinLaunch.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/EditionStorage.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/EmbeddedRuntime.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/EmulatorSettings.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/ExternalEmulator.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/FeatureAccess.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/GraphicsConfiguration.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/KeyboardInput.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/LibraryPersistence.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/LibraryPresentation.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/LibrarySnapshotLoader.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/ManagedLaunch.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/Models.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/NativeConsoleInstaller.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/NativeRuntimeImport.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/NativeSettingsDocument.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/NativeSettingsImport.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/PS3DiscImport.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/Payments.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/ProcessRunner.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/RPCS3Launch.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/Runtime.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeArchive.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeCatalog.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeFileHashes.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeTrust.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/RuntimeUpdates.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/SettingsReset.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/AkitoStationCore/SwitchLaunchRecord.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/RetroHost/RetroHost.c",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/RetroHost/include/RetroHost.h",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/RetroHost/libretro.h",
+      "classification": "upstream/open-source code",
+      "license": "MIT"
+    },
+    {
+      "path": "Sources/RuntimeSupport/RuntimeSupport.c",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Sources/RuntimeSupport/include/RuntimeSupport.h",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "TERMS.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "classification": "upstream notices/provenance metadata",
+      "license": "Retained original notices; not relicensed"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/AkitoStationCoreTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/ArtworkTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/CemuAudioTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/CustomEmulatorTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/EmbeddedRuntimeTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/EmulatorSettingsTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/ExternalEmulatorTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/FeatureAccessTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/NativeConsoleInstallerTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/OptionalRuntimeTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/PaymentTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/ReleaseEngineeringTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/ReleaseHardeningTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/RuntimeUpdateTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "Tests/AkitoStationCoreTests/SettingsResetTests.swift",
+      "classification": "original Akito Station code",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "UNINSTALL.md",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "source-publication.json",
+      "classification": "documentation",
+      "license": "Apache-2.0"
+    }
+  ]
+}
