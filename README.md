@@ -2,6 +2,10 @@
 
 Akito Station is a native macOS emulator frontend for organizing a game library and selecting compatible, separately installed runtimes. This repository contains the Public edition.
 
+![Akito Station library showing a user-supplied game collection](Documentation/Images/akito-station-library.png)
+
+*Illustrative library screenshot supplied by the project owner. The pictured branding/theme differs from the plain system-style views in the rights-clean Public release. Game artwork belongs to its respective owners; games and artwork shown are not bundled with Akito Station.*
+
 Requires macOS 14 or later and Xcode command-line tools with Swift 5.9 or later. Development and local validation target Apple Silicon (arm64); Intel compatibility has not been verified.
 
 Akito Station ships no ROMs or games, console BIOS, firmware, console keys, or emulator runtime binaries. Supply content you are authorized to use. Optional runtimes are selected, imported or installed separately; compatibility depends on the runtime and console. External application launch does not establish embedded gameplay support.
