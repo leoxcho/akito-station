@@ -189,6 +189,10 @@
     {
       "path": "THIRD_PARTY_NOTICES.md",
       "terms": "Retained original notices; not relicensed"
+    },
+    {
+      "path": "Resources/AppIcon.icns",
+      "terms": "Owner-approved Akito Station branding asset; existing rights retained; not relicensed as Apache-2.0."
     }
   ],
   "rule": "Only listed original files are covered; upstream terms and notices are preserved."

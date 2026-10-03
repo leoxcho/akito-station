@@ -3,7 +3,7 @@
 from pathlib import Path
 import hashlib,json,plistlib,subprocess,sys,tempfile
 source=Path(__file__).resolve().parents[1]
-app=source.parent.parent/'Akito Station Public.app'
+app=source.parent.parent/'Akito Station.app'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def run(args):return subprocess.run(list(map(str,args)),capture_output=True,text=True)
 results=[]

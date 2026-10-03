@@ -5,7 +5,7 @@ import AkitoStationCore
 enum BuildEdition {
     // Unknown configurations fail closed, including future build entry points.
     static let isDeveloper = false
-    static let name = "Akito Station Public"
+    static let name = "Akito Station"
     static var customizationRoot:URL {
         EditionStorage.customizationRoot(support:FileManager.default.urls(for:.applicationSupportDirectory,in:.userDomainMask)[0],developer:isDeveloper)
     }

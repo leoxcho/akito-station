@@ -16,7 +16,7 @@ Open [GitHub Releases](https://github.com/leoxcho/akito-station/releases), choos
 
 ### 2. Install
 
-Extract the ZIP, move **Akito Station Public.app** to **Applications**, then open it.
+Extract the ZIP, move **Akito Station.app** to **Applications**, then open it.
 
 ### 3. Approve first launch if required
 

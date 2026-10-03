@@ -765,6 +765,11 @@
       "path": "source-publication.json",
       "classification": "documentation",
       "license": "Apache-2.0"
+    },
+    {
+      "path": "Resources/AppIcon.icns",
+      "classification": "Owner-approved Akito Station branding asset",
+      "license": "Existing rights retained; not relicensed"
     }
   ]
 }

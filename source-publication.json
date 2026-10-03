@@ -100,8 +100,8 @@
     },
     {
       "path": "Documentation/ASSET_PROVENANCE.md",
-      "sha256": "40ec15751b967a62198cb4dbb90d10df15ba11fc498781bc06c516f357936713",
-      "bytes": 345
+      "sha256": "0026f2d5d6c5d45c90cc03bdd6aab883efaca6807ea0e32516daff5fda2b2786",
+      "bytes": 743
     },
     {
       "path": "Documentation/BACKEND_DEPLOYMENT.md",
@@ -120,8 +120,8 @@
     },
     {
       "path": "Documentation/LICENSING_INVENTORY.json",
-      "sha256": "d1dce821e859b31d412018e0a14b559bd60023299e29b07ab64ad2dfae6666de",
-      "bytes": 23338
+      "sha256": "c25fec1f3197af3653a72091186932438e3a01f1d5163eacacd7437e33bc0353",
+      "bytes": 23522
     },
     {
       "path": "Documentation/Licenses/Beetle-PCE-Fast-GPL.txt",
@@ -175,8 +175,8 @@
     },
     {
       "path": "Documentation/RIGHTS_EXCLUSIONS.json",
-      "sha256": "cd826913115ff893ef390a9a5b215563f6d816f66816ff2670e99f6124fdad9c",
-      "bytes": 6372
+      "sha256": "b2499f89341a3bceb7b06e5f4efacf9643c2d39d4f7e8a47114da6c663ebf62a",
+      "bytes": 6233
     },
     {
       "path": "Documentation/RUNTIME_SECURITY.md",
@@ -215,8 +215,8 @@
     },
     {
       "path": "LICENSE_SCOPE.json",
-      "sha256": "01d3d043e737c1c33e00550a509c33d574f1354ade52040c7b65e0f6ad9f7397",
-      "bytes": 7926
+      "sha256": "e1ad6023876fb2c7840d8a7b7c7c86a63e6c3244260ea256c7e6c233f1b9ccd7",
+      "bytes": 8097
     },
     {
       "path": "NOTICE",
@@ -235,8 +235,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "82641dd3536559c99a3659fe3cd2e8061063d740be13a1cf2d99cc7634eb5bf9",
-      "bytes": 3065
+      "sha256": "cfb6e1a5e14d04e20a6fc9292b13847a973f1cfebfb5c1c667984e2aa96921f4",
+      "bytes": 10098
     },
     {
       "path": "RELEASE_NOTES.md",
@@ -245,8 +245,8 @@
     },
     {
       "path": "Resources/Public-Info.plist",
-      "sha256": "cc5475146dde0e67843bd0edf9730339bb9dcd16f6b4d26de93c86811149221a",
-      "bytes": 1153
+      "sha256": "867e0b55bcf9c2e8d9a1b84e76db7daa0e74b87f1b56ce5bd08eed197d6305ec",
+      "bytes": 1204
     },
     {
       "path": "Resources/Public.entitlements",
@@ -270,13 +270,13 @@
     },
     {
       "path": "Scripts/build.sh",
-      "sha256": "33cf34d082eb848af9e7b6d53475ac866273bb4689f081fd9f696960889dc51a",
-      "bytes": 2593
+      "sha256": "f912e36ae9510353e0d9c30c180014f6d26838b2cca8b6aeab2483c90bc52a28",
+      "bytes": 2588
     },
     {
       "path": "Scripts/embed-player.sh",
-      "sha256": "07f57dd1262bbad867865efb21a13e5e151682e684e69e512b9df07a998c7652",
-      "bytes": 1345
+      "sha256": "81cfbad2a07d10bc0a88a3b1c349da3459a5e0b673c794c43e656348de894e05",
+      "bytes": 1468
     },
     {
       "path": "Scripts/import-core.py",
@@ -310,13 +310,13 @@
     },
     {
       "path": "Scripts/package-release-candidate.sh",
-      "sha256": "90f9f7297e72b51de4e45faa8160a086caafc43c35dce05219977ee96a7d0e11",
-      "bytes": 421
+      "sha256": "df9f3bfcbd26e2a30302cc457892879765e535713a3fb90aa96145e201005c05",
+      "bytes": 415
     },
     {
       "path": "Scripts/test-optional-runtimes.py",
-      "sha256": "2de9a9fc77353b353c0abf8403d641e92644d49cb516d89d8cac84c7637f797d",
-      "bytes": 4353
+      "sha256": "2f395378567d50b3b6d36191ab7171257c51e8cd8522ac0d17c37be55f2642a0",
+      "bytes": 4346
     },
     {
       "path": "Scripts/test-release-installer.py",
@@ -335,8 +335,8 @@
     },
     {
       "path": "Scripts/verify-public-release.py",
-      "sha256": "de246dbf201216bbda173f522dbe4f7c31144d04595f43970b424815b894ae9d",
-      "bytes": 2601
+      "sha256": "025f64e3f84f4489937a3668e74603afd4904cd4a7819215877b597e058f446c",
+      "bytes": 2849
     },
     {
       "path": "Sources/AkitoStation/AddEmulatorView.swift",
@@ -350,8 +350,8 @@
     },
     {
       "path": "Sources/AkitoStation/BuildEdition.swift",
-      "sha256": "ac627444e417c9818aacda6d32bba8330eb8f7e3b2e96cd54c2a070d2d753c5b",
-      "bytes": 875
+      "sha256": "a5f6dc27a801549cbf49799465ea248cfc2c518869c8e55b6fe13022ff37133a",
+      "bytes": 868
     },
     {
       "path": "Sources/AkitoStation/CemuGraphicsPacksView.swift",
@@ -762,6 +762,11 @@
       "path": "UNINSTALL.md",
       "sha256": "2b894d9393cb7587dfb95043f9351bfffcb46afd8f38c1eaafb68e823a4c4465",
       "bytes": 186
+    },
+    {
+      "path": "Resources/AppIcon.icns",
+      "sha256": "12935adeb39f62acf8dd716a14cc9013de1e984e439680670dc28b86c90f3352",
+      "bytes": 330254
     }
   ]
 }

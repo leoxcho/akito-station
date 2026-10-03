@@ -3,9 +3,10 @@ set -euo pipefail
 APP="$1"
 HELPER="$APP/Contents/Helpers/Akito Station Player.app"
 mkdir -p "$HELPER/Contents/MacOS" "$HELPER/Contents/Resources"
+cp "$APP/Contents/Resources/AppIcon.icns" "$HELPER/Contents/Resources/"
 cp "$APP/Contents/MacOS/AkitoStation" "$HELPER/Contents/MacOS/AkitoStation"
 cat > "$HELPER/Contents/Info.plist" <<'PLIST'
-<?xml version="1.0" encoding="UTF-8"?><plist version="1.0"><dict><key>CFBundleIdentifier</key><string>app.akitostation.player</string><key>CFBundleName</key><string>Akito Station Player</string><key>CFBundleDisplayName</key><string>Akito Station Player</string><key>CFBundleExecutable</key><string>AkitoStation</string><key>CFBundlePackageType</key><string>APPL</string><key>LSMinimumSystemVersion</key><string>14.0</string><key>NSHighResolutionCapable</key><true/><key>NSPrincipalClass</key><string>NSApplication</string></dict></plist>
+<?xml version="1.0" encoding="UTF-8"?><plist version="1.0"><dict><key>CFBundleIdentifier</key><string>app.akitostation.player</string><key>CFBundleName</key><string>Akito Station Player</string><key>CFBundleDisplayName</key><string>Akito Station Player</string><key>CFBundleExecutable</key><string>AkitoStation</string><key>CFBundlePackageType</key><string>APPL</string><key>LSMinimumSystemVersion</key><string>14.0</string><key>NSHighResolutionCapable</key><true/><key>CFBundleIconFile</key><string>AppIcon</string><key>NSPrincipalClass</key><string>NSApplication</string></dict></plist>
 PLIST
 PARENT_ID=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$APP/Contents/Info.plist")
 /usr/libexec/PlistBuddy -c "Set :CFBundleIdentifier $PARENT_ID.player" "$HELPER/Contents/Info.plist"

@@ -2,8 +2,12 @@
 """Fail closed on unexpected Public bundle content; no Developer access/mutations."""
 import hashlib,json,pathlib,plistlib,re,subprocess,struct
 root=pathlib.Path(__file__).resolve().parents[1]
-app=root/'Build/Akito Station Public.app'
+app=root/'Build/Akito Station.app'
 info=plistlib.loads((app/'Contents/Info.plist').read_bytes())
+assert info['CFBundleName']==info['CFBundleDisplayName']=='Akito Station'
+assert info['CFBundleIconFile']=='AppIcon'
+icon=(app/'Contents/Resources/AppIcon.icns').read_bytes()
+assert icon[:4]==b'icns' and icon==(root/'Resources/AppIcon.icns').read_bytes()
 assert info['CFBundleIdentifier']=='app.akitostation.public'
 assert info['CFBundleURLTypes'][0]['CFBundleURLSchemes']==['akito']
 assert info['AKITO_API_BASE_URL']=='https://akito-station-backend.onrender.com'
