@@ -12,7 +12,7 @@ New to Akito Station? Follow these steps in order. See the **[complete setup gui
 
 ### 1. Download
 
-Open [GitHub Releases](https://github.com/leoxcho/akito-station/releases), choose **Akito Station 1.0.0**, and download **Akito-Station-1.0.0-macOS-arm64.zip**. Requires **Apple Silicon / ARM64 and macOS 14.0 or later**. Games/ROMs, BIOS, firmware, console keys and emulator runtimes are **not included**. Xcode is not required just to use the downloaded app.
+Open [GitHub Releases](https://github.com/leoxcho/akito-station/releases), choose the latest release and download its **macOS-arm64.zip** asset. Requires **Apple Silicon / ARM64 and macOS 14.0 or later**. Games/ROMs, BIOS, firmware, console keys and emulator runtimes are **not included**. Xcode is not required just to use the downloaded app.
 
 ### 2. Install
 
@@ -107,7 +107,7 @@ After building an app, open it, import your own supported game files, select the
 
 ## Status and limitations
 
-This repository publishes the Public source used for the 1.0.0 GitHub release. Original Akito Station code is Apache-2.0; upstream material retains its own terms and unverified artwork/patch/derived material is excluded; see Documentation/SOURCE_PUBLICATION.md and Documentation/LICENSING_INVENTORY.json. See LICENSE_SCOPE.json for exact file scope. Plain system-style views replace excluded branding and illustrations; source adapter builds are unavailable. Console support varies; passing source tests does not verify every runtime, game, controller or save workflow. No emulator runtime is approved for bundling by this export.
+This repository publishes the Public source used for the current GitHub release. Original Akito Station code is Apache-2.0; upstream material retains its own terms and unverified artwork/patch/derived material is excluded; see Documentation/SOURCE_PUBLICATION.md and Documentation/LICENSING_INVENTORY.json. See LICENSE_SCOPE.json for exact file scope. Plain system-style views retain the owner-supplied Akito A/S branding; other excluded illustrations remain absent; source adapter builds are unavailable. Console support varies; passing source tests does not verify every runtime, game, controller or save workflow. No emulator runtime is approved for bundling by this export.
 
 Payment and PRO integration code is experimental. Its complete production purchase, fulfillment, restore and account journey has not been verified. It is not advertised as production-ready.
 

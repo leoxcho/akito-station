@@ -193,6 +193,38 @@
     {
       "path": "Resources/AppIcon.icns",
       "terms": "Owner-approved Akito Station branding asset; existing rights retained; not relicensed as Apache-2.0."
+    },
+    {
+      "path": "Resources/logo_classic.png",
+      "terms": "Owner-supplied Akito Station logo concept; individual transparent cutouts prepared with built-in imagegen. Branding rights retained; not relicensed as Apache-2.0."
+    },
+    {
+      "path": "Resources/logo_gold.png",
+      "terms": "Owner-supplied Akito Station logo concept; individual transparent cutouts prepared with built-in imagegen. Branding rights retained; not relicensed as Apache-2.0."
+    },
+    {
+      "path": "Resources/logo_neon.png",
+      "terms": "Owner-supplied Akito Station logo concept; individual transparent cutouts prepared with built-in imagegen. Branding rights retained; not relicensed as Apache-2.0."
+    },
+    {
+      "path": "Resources/logo_chrome.png",
+      "terms": "Owner-supplied Akito Station logo concept; individual transparent cutouts prepared with built-in imagegen. Branding rights retained; not relicensed as Apache-2.0."
+    },
+    {
+      "path": "Resources/logo_blueprint.png",
+      "terms": "Owner-supplied Akito Station logo concept; individual transparent cutouts prepared with built-in imagegen. Branding rights retained; not relicensed as Apache-2.0."
+    },
+    {
+      "path": "Resources/logo_aurora.png",
+      "terms": "Owner-supplied Akito Station logo concept; individual transparent cutouts prepared with built-in imagegen. Branding rights retained; not relicensed as Apache-2.0."
+    },
+    {
+      "path": "Resources/logo_ice.png",
+      "terms": "Owner-supplied Akito Station logo concept; individual transparent cutouts prepared with built-in imagegen. Branding rights retained; not relicensed as Apache-2.0."
+    },
+    {
+      "path": "Resources/StationLogo.png",
+      "terms": "Owner-supplied Akito Station logo concept; individual transparent cutouts prepared with built-in imagegen. Branding rights retained; not relicensed as Apache-2.0."
     }
   ],
   "rule": "Only listed original files are covered; upstream terms and notices are preserved."

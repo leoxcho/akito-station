@@ -9,6 +9,7 @@ struct PremiumSettings: View {
     @AppStorage("premiumWallpaper") private var wallpaper = ""
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
+            AppLogoSettings()
             Text(BuildEdition.isDeveloper ? "Developer · all features available" : (premium.allows(.consoleThemes) ? "Akito Station Premium" : "Akito Station Free")).font(.title2)
             Text("Your library, emulators, controllers and saves are included in Free.")
             Picker("Console-inspired theme", selection: $theme) {

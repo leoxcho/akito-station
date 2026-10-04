@@ -6,7 +6,7 @@ struct AkitoStationSettings:View {
  @State private var resetLocations=false
  @State private var resetGeneration=UUID()
  let baseCategories=["General","Emulators","Emulator Settings","Graphics","Audio","Controllers","BIOS / Firmware / Keys","Packages / Licenses","Systems","Storage Locations","AI Assistant","Emulator Updates","Advanced"]
- var categories:[String]{baseCategories.filter{BuildEdition.isDeveloper || !["AI Assistant","Advanced"].contains($0)} + ["Premium & Appearance"] + (BuildEdition.isDeveloper ? [] : ["Akito Station PRO"])}
+ var categories:[String]{baseCategories.filter{BuildEdition.isDeveloper || !["AI Assistant","Advanced"].contains($0)} + ["Appearance"] + (BuildEdition.isDeveloper ? [] : ["Akito Station PRO"])}
  var body:some View{NavigationSplitView{List(categories,id:\.self,selection:$category){Text($0)}.scrollContentBackground(.hidden).background(IceTheme.navy).navigationTitle("Settings").frame(minWidth:170)}detail:{VStack(alignment:.leading){HStack{Text(category).font(.title2.bold());Spacer();Button("Reset All Settings…"){resetAll=true}.disabled(!store.canResetSettings);Button("Done"){dismiss()}}.padding(.bottom,16);ScrollView{content.id(resetGeneration).frame(maxWidth:.infinity,alignment:.leading)}}.padding(24).background(IceBackdrop())}.preferredColorScheme(.dark).tint(IceTheme.cyan).alert("Reset all settings?",isPresented:$resetAll){Button("Cancel",role:.cancel){};Button("Reset All Settings",role:.destructive){store.resetAllSettings();resetGeneration=UUID()}}message:{Text("Restore storage locations, system and game profiles, controller mappings, managed emulator settings, artwork and update preferences. Custom library paths and update sources are cleared. Configuration files are backed up. ROMs, saves, firmware and runtimes remain at their existing locations; add your libraries again afterward. Stop any independently launched emulators first.")}.alert("Reset storage locations?",isPresented:$resetLocations){Button("Cancel",role:.cancel){};Button("Reset Locations",role:.destructive){store.resetStorage(all:true);resetGeneration=UUID()}}message:{Text("Use the default Data folder, clear location overrides and remove library paths. Files are not moved or deleted. Add your ROM libraries again afterward.")}}
  @ViewBuilder var content:some View{switch category{
  case "Storage Locations":storageView
@@ -15,7 +15,7 @@ struct AkitoStationSettings:View {
  case "Emulator Settings":VStack(alignment:.leading,spacing:16){Picker("Console",selection:$system){ForEach(Platform.allCases.filter{$0 != .unknown}){Text($0.title).tag($0)}};EmulatorSettingsPanel(system:system).id(system.rawValue+"-"+(store.engine(system) ?? ""))}
  case "Emulator Updates":runtimeView
  case "Akito Station PRO":PublicPaymentSettings(premium: .shared)
- case "Premium & Appearance":PremiumSettings()
+ case "Appearance":PremiumSettings()
  case "Controllers":ControllerSettings()
  case "BIOS / Firmware / Keys":FirmwareSettings()
  case "Packages / Licenses":ContentInstallView()

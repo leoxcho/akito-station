@@ -3,6 +3,7 @@ set -euo pipefail
 APP="$1"
 HELPER="$APP/Contents/Helpers/Akito Station Player.app"
 mkdir -p "$HELPER/Contents/MacOS" "$HELPER/Contents/Resources"
+cp "$APP"/Contents/Resources/logo_*.png "$HELPER/Contents/Resources/"
 cp "$APP/Contents/Resources/AppIcon.icns" "$HELPER/Contents/Resources/"
 cp "$APP/Contents/MacOS/AkitoStation" "$HELPER/Contents/MacOS/AkitoStation"
 cat > "$HELPER/Contents/Info.plist" <<'PLIST'

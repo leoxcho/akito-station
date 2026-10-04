@@ -7,6 +7,6 @@ if rg -q "Status: BLOCKED" Documentation/LICENSE_REPORT.md; then
   exit 1
 fi
 mkdir -p Build
-ARCHIVE="$PWD/Build/Akito-Station-1.0.0-macOS-arm64.zip"
+ARCHIVE="$PWD/Build/Akito-Station-1.0.1-macOS-arm64.zip"
 ditto -c -k --norsrc --noextattr --keepParent "Build/Akito Station.app" "$ARCHIVE"
 echo "$ARCHIVE"

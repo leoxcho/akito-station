@@ -34,7 +34,7 @@ for p in binaries:
   assert forbidden not in b,(p.name,forbidden)
  for required in [b'app.akitostation.public.session',b'Akito Station PRO Membership',b'AkitoStationPublic/preferences.json']:
   assert required in b,(p.name,required)
- allowed={'AkitoStation','Info.plist','CodeResources','AppIcon.icns','StationLogo.png'}
+ allowed={'AkitoStation','Info.plist','CodeResources','AppIcon.icns','StationLogo.png','logo_aurora.png','logo_classic.png','logo_chrome.png','logo_neon.png','logo_ice.png','logo_gold.png','logo_blueprint.png'}
 for p in app.rglob('*'):
  assert not p.is_symlink(),f'Unexpected symlink: {p}'
  if not p.is_file():continue
