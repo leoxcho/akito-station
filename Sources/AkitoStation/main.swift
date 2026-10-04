@@ -17,7 +17,7 @@ if args.contains("--core-options") {
 if args.contains("--verify-runtime-core"),let i=args.firstIndex(of:"--core"),i+1<args.count {if arm_inspect(args[i+1]) != 0{print("Native libretro ABI verified; game boot not tested");exit(0)};fputs(String(cString:arm_error())+"\n",stderr);exit(3)}
 final class AppDelegate:NSObject,NSApplicationDelegate {
  var player:Player?
- func applicationDidFinishLaunching(_ notification:Notification){NSApp.setActivationPolicy(.regular);NSApp.activate(ignoringOtherApps:true)}
+ func applicationDidFinishLaunching(_ notification:Notification){NSApp.applicationIconImage=AppLogo.selected.image;NSApp.setActivationPolicy(.regular);NSApp.activate(ignoringOtherApps:true)}
  func applicationShouldTerminate(_ sender:NSApplication)->NSApplication.TerminateReply {
   LibraryPersistence.flush{DispatchQueue.main.async{sender.reply(toApplicationShouldTerminate:true)}}
   return .terminateLater

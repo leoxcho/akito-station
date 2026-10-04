@@ -16,6 +16,11 @@ struct IceBackdrop: View {
 }
 enum AppLogo: String, CaseIterable, Identifiable {
  case aurora, classic, chrome, neon, ice, gold, blueprint
+ static var selected: AppLogo {
+  let identifier = Bundle.main.bundleIdentifier ?? "app.akitostation.public"
+  let defaults = identifier.hasSuffix(".player") ? (UserDefaults(suiteName: String(identifier.dropLast(7))) ?? .standard) : .standard
+  return AppLogo(rawValue: defaults.string(forKey: "appLogo.v1") ?? "aurora") ?? .aurora
+ }
  var id: String { rawValue }
  var title: String { rawValue.capitalized }
  var image: NSImage? {
