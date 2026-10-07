@@ -1,5 +1,22 @@
 # Akito Station
 
+> **Free and Open Source — No Pro Edition, No Subscriptions, No PayPal, No Stripe**
+
+Akito Station is free and open-source software.
+
+There is no paid membership, premium unlock, subscription, PayPal payment system, or Stripe payment system.
+
+## Free Forever
+
+- No Pro version
+- No paid features
+- No subscriptions
+- No PayPal
+- No Stripe
+- No premium membership
+
+The complete project is publicly available under its open-source license.
+
 Akito Station is a native macOS emulator frontend for organizing a game library and selecting compatible, separately installed runtimes. This repository contains the Public edition.
 
 ![Akito Station library showing a user-supplied game collection](Documentation/Images/akito-station-library.png)

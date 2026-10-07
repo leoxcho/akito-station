@@ -21,6 +21,9 @@ struct LibraryView:View {
  Group { if section == "Consoles" { ConsoleCollection() } else if section == "Memory cards" { MemoryCardCollection() } else { VStack(alignment:.leading,spacing:0){header
  if store.games.isEmpty{ContentUnavailableView{Label("Your next adventure starts here",systemImage:"gamecontroller")}description:{Text("Choose your ROM libraries in Settings. Your original games and saves stay untouched.")}actions:{Button("Open Settings"){settings=true}.buttonStyle(.borderedProminent)}.frame(maxWidth:.infinity,maxHeight:.infinity)}else{
  ScrollView{LazyVGrid(columns:[GridItem(.adaptive(minimum:170,maximum:225),spacing:22)],spacing:24){ForEach(store.visible){game in GameCard(game:game,selected:store.selected?.id==game.id).task(id:game.id){await store.loadArtwork(game)}.onTapGesture{store.selected=game}.onTapGesture(count:2){store.play(game)}.contextMenu{Button("Play"){store.play(game)};Button(game.favorite ? "Remove favorite":"Favorite"){store.favorite(game)}
+#if AKITO_DEVELOPER
+Button("Diagnose"){store.diagnose(game);settings=true}
+#endif
 }}}.padding(28)}
  }
  if !store.artworkProgress.isEmpty{HStack{if store.scrapingArtwork{ProgressView().controlSize(.small)};Text(store.artworkProgress).lineLimit(2);Spacer();if store.scrapingArtwork{Button("Cancel"){store.cancelArtworkScrape()}}else{Button("Dismiss"){store.artworkProgress=""}}}.font(.caption).padding(.horizontal,28).padding(.vertical,8)}
@@ -40,33 +43,30 @@ struct LibraryView:View {
  .onOpenURL{url in if url.scheme=="akito",let game=store.games.first(where:{$0.id==url.host}){store.play(game)}}
  }
  var header:some View{VStack(alignment:.leading,spacing:18){HStack{VStack(alignment:.leading,spacing:5){Text("コレクション  /  THE COLLECTION").font(.caption2.weight(.bold)).tracking(3).foregroundStyle(IceTheme.gold);Text(store.filter=="favorites" ? "Your favorites":store.filter=="recent" ? "Jump back in":"Your library").font(.system(size:38,weight:.light,design:.rounded)).foregroundStyle(IceTheme.chrome)};Spacer();Picker("Sort",selection:$store.sort){Text("Title").tag("Title");Text("Recently played").tag("Recently played");Text("Play time").tag("Play time")}.frame(width:185)
- PROMembershipControl().padding(.leading,12)
  };HStack{Image(systemName:"magnifyingglass").foregroundStyle(.secondary);TextField("Search your collection",text:$store.search).textFieldStyle(.plain).focused($searchFocused);if store.busy{ProgressView().controlSize(.small)}}.padding(12).background(IceTheme.panel,in:RoundedRectangle(cornerRadius:12)).overlay(RoundedRectangle(cornerRadius:12).stroke(searchFocused ? IceTheme.cyan : IceTheme.pale.opacity(0.14),lineWidth:searchFocused ? 2:1))}.padding(28).padding(.bottom,-4)}
  func nav(_ title:String,_ icon:String,_ value:String)->some View{Button{section="Games";store.filter=value}label:{HStack{Image(systemName:icon).frame(width:20);Text(title).lineLimit(1);Spacer()}.font(.system(size:13,weight:.medium)).padding(10).background(section=="Games" && store.filter==value ? accent.opacity(0.18):.clear,in:RoundedRectangle(cornerRadius:8)).foregroundStyle(section=="Games" && store.filter==value ? IceTheme.pale:.secondary)}.buttonStyle(.plain)}
 }
-struct GameCard: View {
- let game: Game
- var selected = false
- @State private var cover: NSImage?
- var body: some View {
-  VStack(alignment: .leading) {
-   if let cover { Image(nsImage: cover).resizable().scaledToFit().frame(height: 200) }
-   Text(game.title).font(.headline).lineLimit(2)
-   Text(game.platform.title).font(.caption)
-  }.padding().frame(maxWidth: .infinity, minHeight: 235)
-   .background(Color(nsColor: .controlBackgroundColor))
-   .border(selected ? Color.accentColor : Color.clear)
-   .task(id: game.artwork) {
-    cover = nil
-    if let path = game.artwork { cover = await CoverImageCache.shared.image(path) }
-   }
- }
+struct GameCard:View {
+ let game:Game;var selected=false
+ @State private var hovered=false
+ @State private var cover:NSImage?
+ @State private var loadedArtwork:String?
+ var color:Color{let n=Platform.allCases.firstIndex(of:game.platform) ?? 0;return [IceTheme.purple,IceTheme.blue.opacity(0.6),IceTheme.cyan.opacity(0.45)][n % 3]}
+ var body:some View{VStack(alignment:.leading,spacing:9){ZStack(alignment:.bottomLeading){if loadedArtwork == game.artwork,let img=cover{GeometryReader{geometry in Image(nsImage:img).resizable().scaledToFit().frame(width:geometry.size.width,height:geometry.size.height)}}else{Rectangle().fill(LinearGradient(colors:[color,color.opacity(0.25),.black],startPoint:.topLeading,endPoint:.bottomTrailing));VStack(alignment:.leading){Text(game.platform.rawValue.uppercased()).font(.caption.weight(.heavy)).tracking(3);Spacer();Image(systemName:"gamecontroller.fill").font(.system(size:44)).foregroundStyle(.white.opacity(0.35));Text(game.title).font(.system(size:20,weight:.black,design:.rounded)).lineLimit(4);Text("SEARCH OR IMPORT COVER").font(.system(size:8,weight:.bold)).tracking(1).foregroundStyle(.white.opacity(0.6))}.padding(18)};if game.favorite{Image(systemName:"heart.fill").foregroundStyle(IceTheme.gold).padding(12).frame(maxWidth:.infinity,maxHeight:.infinity,alignment:.topTrailing)}}.frame(maxWidth:.infinity).frame(height:235).background(Color.black.opacity(0.25)).clipShape(RoundedRectangle(cornerRadius:12)).overlay(RoundedRectangle(cornerRadius:12).strokeBorder((selected || hovered) ? accent:accent.opacity(0.16),lineWidth:selected ? 2:1));Text(game.title).font(.system(size:13,weight:.semibold)).lineLimit(1);Text(game.platform.title).font(.caption).foregroundStyle(.secondary).lineLimit(1)}.padding(10).background { RoundedRectangle(cornerRadius:16).fill(IceTheme.panel).shadow(color:accent.opacity(hovered ? 0.2:0),radius:16,y:6) }.overlay(RoundedRectangle(cornerRadius:16).stroke(accent.opacity(hovered ? 0.65:0.10))).offset(y:hovered ? -4:0).animation(.easeOut(duration:0.18),value:hovered).onHover{hovered=$0}.contentShape(Rectangle()).task(id:game.artwork){
+  guard let path=game.artwork else { cover=nil;loadedArtwork=nil;return }
+  let image=await CoverImageCache.shared.image(path)
+  guard !Task.isCancelled else{return}
+  cover=image;loadedArtwork=path
+ }}
 }
 struct GameDetail:View {
  @EnvironmentObject var store:LibraryStore;@Environment(\.dismiss) var dismiss;let game:Game;@State var profile=GameProfile();@State var advanced=false;@State var artworkEditor=false
  var currentGame:Game{store.games.first(where:{$0.id==game.id}) ?? game}
- var body:some View{VStack(alignment:.leading,spacing:22){HStack{Text(game.platform.title.uppercased()).font(.caption.weight(.bold)).tracking(2).foregroundStyle(accent);Spacer();Button("Done"){dismiss()}};HStack(alignment:.top,spacing:28){VStack{GameCard(game:currentGame);Button("Change box art…"){artworkEditor=true}}.frame(width:185);VStack(alignment:.leading,spacing:18){Text(game.title).font(.largeTitle.bold());Label(store.health(game),systemImage:store.engine(game.platform)==nil ? "exclamationmark.circle":"checkmark.shield").foregroundStyle(.secondary);Text("\(Int(game.playSeconds/60)) minutes played · \(game.status)").font(.caption);HStack{Button{store.play(game);dismiss()}label:{Label("Play",systemImage:"play.fill").frame(width:110)}.buttonStyle(.borderedProminent).controlSize(.large).keyboardShortcut(.defaultAction);Button{store.favorite(game)}label:{Image(systemName:"heart")}};
-ScrollView{GameEmulatorPicker(platform:game.platform,profile:$profile);ProfileEditor(profile:$profile,nativeGPU:GraphicsConfiguration.scalableEngines.contains(store.engine(game.platform) ?? ""),engine:store.engine(game.platform) ?? "")}.frame(maxHeight:220);Button("Save game profile"){store.attempt{try store.saveProfile(profile,game:game)}};Button("Roll back profile"){store.rollbackProfile(game)}}};if advanced{ScrollView{Text(store.assistantLog).font(.system(.caption,design:.monospaced)).textSelection(.enabled)}};Spacer()}.padding(28).background(IceBackdrop()).sheet(isPresented:$artworkEditor){ArtworkEditor(game:currentGame).environmentObject(store)}.onAppear{store.attempt{profile=try store.profile(game)}}}
+ var body:some View{VStack(alignment:.leading,spacing:22){HStack{Text(game.platform.title.uppercased()).font(.caption.weight(.bold)).tracking(2).foregroundStyle(accent);Spacer();Button("Done"){dismiss()}};HStack(alignment:.top,spacing:28){VStack{GameCard(game:currentGame);Button("Change box art…"){artworkEditor=true}}.frame(width:185);VStack(alignment:.leading,spacing:18){Text(game.title).font(.largeTitle.bold());Label(store.health(game),systemImage:store.engine(game)==nil ? "exclamationmark.circle":"checkmark.shield").foregroundStyle(.secondary);Text("\(Int(game.playSeconds/60)) minutes played · \(game.status)").font(.caption);HStack{Button{store.play(game);dismiss()}label:{Label("Play",systemImage:"play.fill").frame(width:110)}.buttonStyle(.borderedProminent).controlSize(.large).keyboardShortcut(.defaultAction);Button{store.favorite(game)}label:{Image(systemName:"heart")}};
+#if AKITO_DEVELOPER
+HStack{Button("Test boot"){store.testBoot(game);advanced=true};Button("Diagnose and repair"){store.testBoot(game,repair:true);advanced=true}}.disabled(store.busy)
+#endif
+ScrollView{GameEmulatorPicker(platform:game.platform,profile:$profile);ProfileEditor(profile:$profile,nativeGPU:GraphicsConfiguration.scalableEngines.contains(store.engine(game) ?? ""),engine:store.engine(game) ?? "")}.frame(maxHeight:220);Button("Save game profile"){store.attempt{try store.saveProfile(profile,game:game)}};Button("Roll back profile"){store.rollbackProfile(game)}}};if advanced{ScrollView{Text(store.assistantLog).font(.system(.caption,design:.monospaced)).textSelection(.enabled)}};Spacer()}.padding(28).background(IceBackdrop()).sheet(isPresented:$artworkEditor){ArtworkEditor(game:currentGame).environmentObject(store)}.onAppear{store.attempt{profile=try store.profile(game)}}}
 }
 
 /// Image I/O runs on a serial worker, never during SwiftUI layout or scrolling.
